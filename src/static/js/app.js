@@ -1,7 +1,16 @@
+function Header() {
+    return (
+        <header className="header">
+            <h1>ToDo App by Indira Febriyanti</h1>
+        </header>
+    );
+}
+
 function App() {
     const { Container, Row, Col } = ReactBootstrap;
     return (
         <Container>
+            <Header />
             <Row>
                 <Col md={{ offset: 3, span: 6 }}>
                     <TodoListCard />
